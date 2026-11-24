@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeRwanda | Feedback</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+    padding: 40px 15px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.07);
+}
+
+.logo {
+    text-align: center;
+    color: #2563eb;
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+h2 {
+    text-align: center;
+    color: #101a35;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #2563eb;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.back {
+    display: block;
+    text-align: center;
+    margin-top: 22px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">CodeRwanda</div>
+
+    <h2>Assessment Feedback</h2>
+
+    <p class="subtitle">
+        Your feedback helps us improve our learning experience.
+    </p>
+
+    <form action="#" method="POST">
+
+        <div class="form-group">
+            <label>Student Name</label>
+            <input type="text" name="student" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Assessment Category</label>
+            <select name="category" required>
+                <option value="">Select Category</option>
+                <option>HTML and CSS</option>
+                <option>JavaScript</option>
+                <option>Database Management</option>
+                <option>Networking</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>How would you rate the assessment?</label>
+            <select name="rating" required>
+                <option value="">Select Rating</option>
+                <option>Excellent</option>
+                <option>Very Good</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Poor</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Your Comments</label>
+            <textarea name="comments" placeholder="Share your experience and suggestions..." required></textarea>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+
+    <a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+</body>
+</html>
+
